@@ -8,21 +8,21 @@ function PastExams() {
 // Example data
   const exams = [
     {
-      title: "CSCE 121 Midterm",
+      title: "CSCE 121",
       professor: "Meer",
       semester: "Fall 2023",
       difficulty: "Medium",
       tags: ["CSCE 121", "Meer", "Midterm", "2023", "Fall"]
     },
     {
-      title: "MATH 251 Final",
+      title: "MATH 251",
       professor: "Smith",
       semester: "Spring 2024",
       difficulty: "Hard",
       tags: ["MATH 251", "Smith", "Final", "2024", "Spring"]
     },
     {
-      title: "ECON 202 Quiz Pack",
+      title: "ECON 202",
       professor: "Johnson",
       semester: "Fall 2022",
       difficulty: "Easy",
@@ -36,15 +36,17 @@ function PastExams() {
   );
 
   return (
-    <div className="past-exams">
+    <div className="pastExams">
       {/* Search Bar */}
-      <input
-        type="text"
-        placeholder="Search exams by course, professor, type, year..."
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-        className="search-bar"
-      />
+        <input
+          type="text"
+          placeholder="Search exams by course, professor, type, year..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className="search-bar"
+        />
+
+        
 
       {/* Grid of Cards */}
       <div className="exam-grid">
@@ -52,6 +54,13 @@ function PastExams() {
           <ExamCard key={index} {...exam} />
         ))}
       </div>
+
+      {/*upload content*/}
+        <div className="uploadExams">
+          <button className="uploadBtn">Upload resource</button>
+        </div>
+
+      
     </div>
   );
 }

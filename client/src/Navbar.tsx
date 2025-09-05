@@ -11,7 +11,7 @@ function Navbar() {
       <Link to="/button-2" className="nav-button">Button 2</Link>
       <Link to="/button-3" className="nav-button">Button 3</Link>
       <Link to="/button-4" className="nav-button">Button 4</Link>
-      <Link to="/button-5" className="nav-button">Button 5</Link>
+      <Link to="/gpa-calc" className="nav-button">GPA calculator</Link>
     </div>
   );
 }

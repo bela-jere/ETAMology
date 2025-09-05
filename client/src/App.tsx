@@ -7,9 +7,7 @@ import Home from './Home';
 import Button2 from './Button2';
 import Button3 from './Button3';
 import Button4 from './Button4';
-import Button5 from './Button5';
-
-
+import GPAcalc from './GPAcalc';
 import './App.css';
 
 function App() {
@@ -24,14 +22,11 @@ function App() {
         <Route path="/button-2" element={<Button2 />} />
         <Route path="/button-3" element={<Button3 />} />
         <Route path="/button-4" element={<Button4 />} />
-        <Route path="/button-5" element={<Button5 />} />
+        <Route path="/gpa-calc" element={<GPAcalc />} />
       </Routes>
     </div>
   );
 }
 
-//button 1: Info page on navigating Howdy- static page 
-// FAQ
-// 
 
 export default App;
