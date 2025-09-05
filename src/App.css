@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.banner h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+.banner p {
+  margin-left: 15rem;
+  margin-right: 15rem;
+  margin-top: 2rem;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  background: white;
+  gap: 10px;
+}
+
+.Navbar .nav-button {
+  flex: 1;
+  height: 40px;
+  margin: 0 0.25rem;
+  border: none;
+  border-radius: 0.75rem;
+  color: #2a0303;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none; /* remove underline from Link */
+  line-height: 40px;     /* vertically center text */
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.Navbar :hover {
+  color: rgb(167, 25, 36);
+}
+
+.Routes {
+  width: 16.66666666%;
+}
+
+.logo {
+  height: 40px;     /* adjust size */
+  margin-right: 1rem;
+}
+
+.Navbar p {
+  flex: 1;
+  height: 40px;
+  margin: 0 0.25rem;
+  border: none;
+  border-radius: 0.75rem;
+  color: #2a0303;
+  font-weight: 500;
+  text-align: left;
+  text-decoration: none; /* remove underline from Link */
+  line-height: 40px;     /* vertically center text */
+  cursor: pointer;
+  margin-right: 15rem;
+}
+
+.banner {
+  background: linear-gradient(to top, #4f1111, rgb(167, 25, 36));
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 10px;
+  /*border-radius: 1rem;*/
+  /*box-shadow: 0 4px 12px rgba(0,0,0,0.2);*/
+}
+
+.banner h1 {
+  font-size: 6.5rem;
+  margin-bottom: 0.2rem;
+  margin-top:0px;
+}
+
+.banner p {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.banner button {
+  background: white;
+  color: #6366f1;
+  padding: 0.5rem 1.25rem;
+  font-weight: bold;
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.banner button:hover {
+  background: #8ca7db;
+}
+
+
+
+.pastexams h1 {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.pastexams p {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.past-exams {
+  padding: 2rem;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.exam-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 1.5rem;
+}
+
+.exam-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.exam-card h2 {
+  margin-bottom: 0.5rem;
+}
+
+.tags {
+  margin: 0.5rem 0 1rem;
+}
+
+.tag {
+  display: inline-block;
+  background: #e5e7eb;
+  color: #111;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.download-btn {
+  background: #3B82F6;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.download-btn:hover {
+  background: #295db0;
+}
