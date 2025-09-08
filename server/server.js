@@ -1,17 +1,12 @@
 //server.js
 
-require("dotenv").config();
+require("dotenv").config({ path: "./file.env" });
 const mongoose = require("mongoose"); //imports mongoose and allows defintion of schemas, creation of models, and query MongoDB
-
-mongoose.connect(process.env.MONGO_URI)
-  .then(() => console.log("MongoDB connected"))
-  .catch(err => console.log("MongoDB connection error:", err));
 
 mongoose.connect(process.env.MONGO_URI) //connection string
   .then(() => console.log("MongoDB connected"))
   .catch(err => console.log("MongoDB connection error:", err));
 
-  
 const { Schema, model } = mongoose; 
 	//schema: defines structure of documents in MongoDB
 	//Model: JS object to create, read, update, delete (CRUD) documents to that schema
