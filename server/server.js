@@ -31,7 +31,7 @@ app.get("/count", async (req, res) => {
     count = new Count(); // create if none exists
     await count.save();
   }
-  res.json({ count: count.value });
+  res.json({ count: count.value }); //send response in JSON format
 });
 
 // Increment count
@@ -42,8 +42,19 @@ app.post("/increment", async (req, res) => {
   }
   count.value++;
   await count.save();
-  res.json({ count: count.value });
+  res.json({ count: count.value }); //send response in JSON format
 });
+
+//reset count
+app.post("/reset", async (req,res) => {
+  let count = await Count.findOne();
+  if (!count) {
+    count = new Count();
+  }
+  count.value = 0;
+  await count.save();
+  res.json({ count: count.value }); //send response in JSON format
+})
 
 app.listen(3003, () => console.log("Server running on http://localhost:3003"));
 

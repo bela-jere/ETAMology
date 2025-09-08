@@ -34,6 +34,14 @@ function App() {
     const data = await res.json(); // value stored in variable "data"
     setCount(data.count); // update state
   };
+  const reset = async () => {
+    const res = await fetch("http://localhost:3003/reset", { 
+      method: "POST" 
+    });
+    const data = await res.json();
+    setCount(data.count);
+  };
+  
   return (
     <div>
     <Message />
@@ -41,6 +49,7 @@ function App() {
     <div style={{ textAlign: "center", marginTop: "50px" }}>
       <h1>Count: {count}</h1>
       <button onClick={handleIncrement}>Increment</button>
+      <button onClick={reset}>Reset</button>
     </div>
       <Routes>
         <Route path="/home" element={<Banner />} />
